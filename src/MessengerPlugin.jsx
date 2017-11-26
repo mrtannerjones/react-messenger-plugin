@@ -55,7 +55,7 @@ export default class MessengerPlugin extends Component {
         const {type, appId, passthroughParams, color, size, pageId} = this.props;
         // use dangerouslySetInnerHTML because React will ignore custom attributes
         const markup = {
-            __html: `<div class=${type === 'send-to' ? 'fb-send-to-messenger' : 'fb-messengermessageus'} messenger_app_id=${appId} page_id=${pageId} data-ref=${passthroughParams} color=${color} size=${size}></div>`
+            __html: `<div class=${type === 'send-to' ? 'fb-send-to-messenger w177px' : 'fb-messengermessageus w177px'} messenger_app_id=${appId} page_id=${pageId} data-ref=${passthroughParams} color=${color} size=${size}></div>`
         };
         return <div dangerouslySetInnerHTML={markup}></div>;
     }
